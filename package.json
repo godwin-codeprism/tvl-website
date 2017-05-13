@@ -1,0 +1,22 @@
+{
+  "name": "tvl-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godwinvc/tvl-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/godwinvc/tvl-website/issues"
+  },
+  "homepage": "https://github.com/godwinvc/tvl-website#readme",
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}
