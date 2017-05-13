@@ -1,0 +1,763 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('fonts/GE Inspira Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: myFont;
+    src: url('fonts/GE Inspira Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: mysecFont;
+    src: url('fonts/Museo 500.otf') format('truetype');
+}
+
+@font-face {
+    font-family: mythdFont;
+    src: url('fonts/Museo 300.otf') format('truetype');
+}
+
+.head {
+    color: #20a8db;
+    font-size: 34px;
+    font-family: myFirstFont;
+}
+
+.subhead {
+    color: #20a8db;
+    font-size: 24px;
+    font-family: myFont;
+}
+
+.content {
+    color: #20a8db;
+    font-size: 18px;
+    font-family: myFont;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.carousel-inner img {
+    width: 100%;
+    /* Set width to 100% */
+    margin: auto;
+    min-height: 200px;
+}
+
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.back {
+    box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
+}
+
+.logo {
+    margin-top: 0.5%;
+    margin-left: 50px;
+    height: 100%;
+}
+
+#custom-nav {
+    -webkit-box-shadow: 3px 3px 3px #8c8c8c;
+    -moz-box-shadow: 3px 3px 3px #8c8c8c;
+    box-shadow: 3px 3px 3px #8c8c8c;
+    z-index: 999;
+}
+
+
+nav.navbar.shrink {
+  min-height: 25px;
+}
+
+nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+ nav.navbar.shrink .logo{
+    height: 55px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
+
+.navbar {
+    background-color: #ebebeb;
+    background-image: url("Images/bgimg.png");
+    color: #a1a1a1;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: myFirstFont;
+}
+
+.navbar-nav li a {
+    line-height: 44px;
+    cursor: pointer;
+}
+
+.navbar-nav li a:hover {
+    color: #291670 !important;
+}
+
+.navbar-nav li.active a {
+    color: #555;
+    background-color: #dad7d7;
+    border-top: 5px solid #291671 !important;
+}
+
+.navbar-nav li a {
+    border-top: 5px solid transparent;
+}
+
+.loginbtn {
+    background-color: #36257f;
+    color: #ffffff;
+    padding: 0px 20px;
+    margin-left: 20px;
+}
+
+.navbar-btn {
+    margin-top: 27px;
+    margin-bottom: 8px;
+}
+
+
+/*.navbar-toggle {
+    margin-top: 25px;
+}*/
+
+.main {
+    padding-top: 80px;
+    background-image: url("Images/bgimg.png");
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    color: #f4511e;
+}
+
+.carousel-content {
+    position: absolute;
+    left: 6%;
+    top: 20%;
+    z-index: 20;
+    font-size: 34px;
+    font-family: mythdFont;
+    color: #083d5e;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel-content p {
+    margin-bottom: 0;
+}
+
+#myCarousel {
+    -webkit-box-shadow: 0 10px 6px -6px #8c8c8c;
+    -moz-box-shadow: 0 10px 6px -6px #8c8c8c;
+    box-shadow: 0 10px 6px -6px #8c8c8c;
+}
+
+.carousel-control .arrow {
+    position: absolute;
+    top: 46%;
+    display: inline-block;
+}
+
+#lr {
+    left: 10%;
+}
+
+#rr {
+    right: 10%;
+}
+
+.item {
+    box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
+}
+
+
+/*.head {
+    padding: 170px;
+    padding-left: 50px;
+}*/
+
+#p1,
+#p2 {
+    color: #59b11a;
+    font-family: myFirstFont;
+}
+
+#p1 {
+    font-size: 25px;
+    text-shadow: 1px 1px #000000;
+}
+
+#p2 {
+    font-size: 57px;
+    text-shadow: 1px 1px #000000;
+}
+
+#p3 {
+    font-family: myFont;
+    font-size: 22.6px;
+}
+
+.part2 {
+    margin-top: -2%;
+    position: relative;
+    background-image: url("Images/part2.png");
+    background-repeat: no-repeat;
+    z-index: 100;
+    text-align: center;
+    padding: 4%;
+    background-position: 100% 100%;
+    border-top: 10px solid #4d4d4d;
+}
+
+.p3text {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.p4text {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 2%;
+}
+
+.part3 {
+    padding: 4%;
+    background-image: url("Images/part3img.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    border-top: 6px solid #4d4d4d;
+}
+
+#p1para {
+    margin-bottom: 0;
+}
+
+#p2para {
+    margin-top: 3%;
+}
+
+.part4 {
+    background-color: #eaeaea;
+    border-top: 6px solid #4d4d4d;
+    padding: 3%;
+}
+
+.col-sm-6.whytext.text-center {
+    padding: 2%;
+}
+
+.part5 {
+    background-image: url("Images/part5img.png");
+    background-position: 100% 100%;
+    text-align: center;
+    padding: 3%;
+    border-top: 6px solid #4d4d4d;
+}
+
+.part5p1 {
+    color: #ffffff;
+    font-size: 34px;
+    font-family: myFirstFont;
+}
+
+.part5p2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: myFont;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.part6 {
+    background-image: url("Images/part6img.png");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 2%;
+}
+
+.part6left {
+    text-align: center;
+}
+
+.part6p1 {
+    color: #20a8db;
+    font-size: 34px;
+    font-family: myFirstFont;
+}
+
+.part6p2 {
+    font-family: myFirstFont;
+    padding-top: 10px;
+}
+
+table {
+    color: #20a8db;
+    width: 100%;
+    font-size: 18px;
+    font-family: myFont;
+}
+
+.tbl {
+    padding: 20px;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+.part7 {
+    background-repeat: no-repeat;
+    background-image: url("Images/2.png");
+    text-align: center;
+    background-position: 100% 100%;
+}
+
+.quotation {
+    color: #ffffff;
+    font-size: 26px;
+    font-family: mysecFont;
+    padding: 4%;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.whole2 {
+    animation: zoomIn;
+    animation-duration: 1s;
+}
+
+#q1 {
+    margin-top: -40px;
+}
+
+#q2 {
+    position: relative;
+    top: 20px;
+}
+
+.part8 {
+    color: #fff;
+    background-image: url("Images/3new.png");
+}
+
+
+/*.left8 {
+    padding: 60px;
+    padding-left: 50px !important;
+    padding-right: 0px;
+}*/
+
+.addp1 {
+    font-size: 21px;
+    font-family: myFirstFont;
+}
+
+address {
+    font-size: 18px;
+    font-family: myFont;
+    margin-bottom: 0;
+}
+
+.middle8 {
+    padding-top: 1%;
+}
+
+
+/*.right8 {
+    padding-top: 60px;
+}*/
+
+.contactus {
+    width: 100%;
+    float: left;
+}
+
+.value {
+    width: 50%;
+    float: left;
+    margin-left: 4%;
+    text-align: left;
+}
+
+.lable {
+    width: 40%;
+    float: left;
+    text-align: right;
+}
+
+.contactright {
+    position: relative;
+    top: 32px;
+    padding: 0px;
+}
+
+.container.whole8 {
+    padding-top: 3%;
+}
+
+footer {
+    background-color: #636363;
+    padding: 15px;
+    padding-left: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer a,
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer li {
+    padding-left: 4%;
+    display: inline;
+    color: #fff;
+}
+
+
+/* mobile - portrait*/
+
+@media (max-width: 413px) {
+    .head {
+        font-size: 20px;
+    }
+    .subhead {
+        font-size: 17px;
+    }
+    .content {
+        font-size: 14px;
+    }
+    .logo {
+        width: 70px;
+    }
+    .main {
+        padding-top: 50px;
+    }
+    .carousel-content {
+        text-align: center;
+        font-size: 14px;
+    }
+    .carousel-content p {
+        margin-bottom: 0;
+    }
+    .navbar-nav li a {
+        line-height: 15px;
+    }
+    .carousel-control .arrow {
+        height: 22px;
+        width: 22px;
+    }
+    .part1 {
+        height: auto;
+    }
+    .part2 {
+        padding: 15px;
+        background-size: cover;
+    }
+    .p1text {
+        margin-bottom: 0;
+    }
+    .p2text {
+        margin-bottom: 6px;
+    }
+    .p3text,
+    .p4text {
+        padding: 0px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .part3 {
+        background-image: url("Images/p2img.png");
+        padding: 10px;
+        background-size: cover;
+    }
+    /*.div3 {
+        width: 55%;
+        text-align: center;
+    }
+    #p1para {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    #p2para {
+        font-size: 9px;
+        margin-bottom: 0;
+    }*/
+    .why img {
+        width: 100%;
+    }
+    .part6 {
+        background-image: url("Images/p6img.png");
+        padding: 10px;
+        background-size: cover;
+    }
+    table {
+        font-size: 14px;
+    }
+    .quotation {
+        font-size: 16px;
+    }
+    #q1 {
+        margin-top: -25px;
+        width: 7%;
+    }
+    #q2 {
+        top: 10px;
+        width: 7%;
+    }
+    .addp1 {
+        font-size: 18px;
+    }
+    address {
+        font-size: 14px;
+    }
+    .contactright {
+        top: 26px;
+    }
+    footer a, a:hover {
+    font-size: 10px;
+}
+}
+
+
+/* mobile - landscape*/
+
+@media (min-width: 414px) and (max-width: 750px) {
+    .head {
+        font-size: 22px;
+    }
+    .subhead {
+        font-size: 19px;
+    }
+    .content {
+        font-size: 16px;
+    }
+    .logo {
+        width: 70px;
+    }
+    .main {
+        padding-top: 50px;
+    }
+    .carousel-content {
+        text-align: center;
+        font-size: 14px;
+    }
+    .carousel-content p {
+        margin-bottom: 0;
+    }
+    .navbar-nav li a {
+        line-height: 15px;
+    }
+    .carousel-control .arrow {
+        height: 25px;
+        width: 25px;
+    }
+    .part1 {
+        height: auto;
+    }
+    .part2 {
+        padding: 15px;
+        background-size: cover;
+    }
+    .p1text {
+        margin-bottom: 0;
+    }
+    .p2text {
+        margin-bottom: 6px;
+    }
+    .p3text,
+    .p4text {
+        padding: 0px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .part3 {
+        background-image: url("Images/p2img.png");
+        padding: 10px;
+        background-size: cover;
+    }
+    .why img {
+        width: 50%;
+    }
+    .part6 {
+        background-image: url("Images/p6img.png");
+        padding: 10px;
+        background-size: cover;
+    }
+    table {
+        font-size: 14px;
+    }
+    .quotation {
+        font-size: 16px;
+    }
+    #q1 {
+        margin-top: -25px;
+        width: 4%;
+    }
+    #q2 {
+        top: 10px;
+        width: 4%;
+    }
+    .addp1 {
+        font-size: 18px;
+    }
+    address {
+        font-size: 14px;
+    }
+    .contactright {
+        top: 26px;
+    }
+    .lable {
+        width: 45%;
+    }
+    footer a, a:hover {
+        font-size: 10px;
+    }
+    footer li {
+        padding-left: 5px;
+    }
+}
+
+
+/* ipad - portrait*/
+
+@media (min-width: 751px) and (max-width: 1000px) {
+    .head {
+        font-size: 26px;
+    }
+    .subhead {
+        font-size: 22px;
+    }
+    .content {
+        font-size: 16px;
+    }
+    .logo {
+        width: 100px;
+        margin-left: 0px;
+    }
+    .main {
+        padding-top: 50px;
+    }
+    .carousel-content {
+        text-align: center;
+        font-size: 20px;
+    }
+    .carousel-content p {
+        margin-bottom: 0;
+    }
+    .navbar-nav li a {
+        line-height: 35px;
+    }
+    .carousel-control .arrow {
+        height: 33px;
+        width: 33px;
+    }
+    .part1 {
+        height: auto;
+    }
+    .part2 {
+        padding: 15px;
+        background-size: cover;
+    }
+    .p1text {
+        margin-bottom: 0;
+    }
+    .p2text {
+        margin-bottom: 6px;
+    }
+    .p3text,
+    .p4text {
+        padding: 0px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .part3 {
+        background-image: url("Images/p2img.png");
+        padding: 20px;
+        background-size: cover;
+    }
+    .why img {
+        width: 100%;
+        padding-top: 8%;
+    }
+    .part6 {
+        /*background-image: url("Images/p6img.png");
+        padding: 10px;*/
+        background-size: cover;
+    }
+    table {
+        font-size: 14px;
+    }
+    .quotation {
+        font-size: 18px;
+    }
+    #q1 {
+        margin-top: -25px;
+        width: 4%;
+    }
+    #q2 {
+        top: 10px;
+        width: 4%;
+    }
+    .addp1 {
+        font-size: 18px;
+    }
+    address {
+        font-size: 14px;
+    }
+    .contactright {
+        top: 26px;
+    }
+    .lable {
+        width: 45%;
+    }
+    footer a, a:hover{
+        font-size: 12px;
+    }
+    footer li {
+        padding-left: 5px;
+    }
+}
+
+@media (width:1024px) {
+    .head {
+        font-size: 30px;
+    }
+    .subhead {
+        font-size: 20px;
+    }
+    .content {
+        font-size: 16px;
+    }
+    #p2para {
+        padding-right: 12%;
+    }
+    .quotation {
+        font-size: 20px;
+    }
+}

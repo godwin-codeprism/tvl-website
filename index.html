@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(window).scroll(scrollCrtl);
+
+        function scrollCrtl() {
+            var w = $(window).scrollTop();
+            if (w < $('.part2:eq(0)').offset().top) {
+                $('.nav li').removeClass('active');
+                $('.nav li:eq(0)').addClass('active');
+            } else if (w > $('.part2:eq(0)').offset().top && w < $('.part6:eq(0)').offset().top) {
+                $('.nav li').removeClass('active');
+                $('.nav li:eq(1)').addClass('active');
+            } else if (w >= $('.part6:eq(0)').offset().top) {
+                $('.nav li').removeClass('active');
+                $('.nav li:eq(2)').addClass('active');
+            }
+        }
+
+        function scrollToPart(part) {
+            $('html, body').animate({
+                scrollTop: $(part).offset().top
+            }, 500);
+        }
+        $(window).scroll(function() {
+            $(".slideanim").each(function() {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 900) {
+                    $(this).addClass("slides");
+                }
+            });
+        });
+
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('nav').addClass('shrink');
+            } else {
+                $('nav').removeClass('shrink');
+            }
+        });
+
+    </script>
+    <style>
+        .navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            color: #555;
+            background-color: #dad7d7;
+            border-top: 5px solid #291671 !important;
+        }
+        
+        .slideanim {
+            visibility: hidden;
+        }
+        
+        .slides {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 0.5s;
+            -webkit-animation-duration: 0.5s;
+            visibility: visible;
+        }
+        
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+        
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="custom-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+                <a href="#"><img src="Images/lo.png" class="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li onclick="scrollToPart('#chitfund')"><a>Chit Fund Business</a></li>
+                    <li onclick="scrollToPart('#regular')"><a>Regular Groups</a></li>
+                    <li onclick="scrollToPart('#about')"><a>About Us</a></li>
+                    <li onclick="scrollToPart('#contact')"><a>Contact Us</a></li>
+                    <!--<li><button class="loginbtn navbar-btn">LogIn</button></li>-->
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container_fluid main">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="Images/c1.png" style="width:100%;">
+                    <div class="carousel-content">
+                        <p>Keep Your Money Growing</p>
+                        <p>For a Growing Future!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="Images/c2.png" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="Images/c3.png" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="Images/c4.png" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span aria-hidden="true"><img src="Images/leftarrw.png" class="arrow" id="lr"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span aria-hidden="true"><img src="Images/rightarrw.png" class="arrow" id="rr"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="back text-center">
+                <div class="part2" id="chitfund">
+                    <div class="whole2">
+                        <p class="p1text subhead">INTRODUCING</p>
+                        <p class="p2text head">TVL Chit Fund (P) Ltd.</p>
+                        <p class="p3text content">TVL Chit Fund (P) Ltd., was started in 1991 and got registered in 1999 in a humble way, with the sole aim of serving the unbanked people in and around Guntur City. Today, its activities are spread throughout Andhra Pradesh and Telangana, serving clients of diverse back grounds. It takes care of the needy - the poor, lower and the upper middle classes; of course the rich as well, with the spontaneous response from the public.</p>
+                        <p class="p4text content">The Company’s day to day administration is handled by Sri. Tavva Venkateswarlu, Managing Director & Foreman, Smt. Tavva Sujatha, the Director.</p>
+                    </div>
+                </div>
+
+                <div class="container-fluid part3">
+                    <div class="col-md-6 div3 text-center slideanim">
+                        <p class="ptext head" id="p1para">Background Of</p>
+                        <p class="ptext head" id="p1para">Chit Fund Business</p>
+                        <p class="ptext content" id="p2para">It is unique to South India, an indigenous financial institution till 1970’s; Commercial banks were not accessible to ordinary people in those days. To meet the emergencies, unforeseen expenditures, house purchase and marriage of children etc., one has to approach the traditional money lenders. The interest rates are exhorbitant and many a time, the borrower is subjected to humiliation by the lender for failing to repay the interest and principal amount in time. Nationalization of Banks didn’t improve the situation. Chit Funds proved to be an alternative source of lending and savings. The activities of the chit fund companies are monitored by Government through the Chit Fund Act of 1982.</p>
+                    </div>
+                    <div class="col-md-6 div4 text-center"></div>
+                </div>
+
+                <div class="container-fluid part4">
+                    <div class="col-sm-6 why text-center slideanim"><img src="Images/why.png"></div>
+                    <div class="col-sm-6 whytext text-center slideanim">
+                        <p id="part4p1" class="head">Why TVL Chit Fund (P) Ltd</p>
+                        <p id="part4p2" class="content">The Company under the able guidance of Sri. Tavva Venkateswarlu, has become synonymous with trust and credibility. Aam Admi is the motto of TVL CHIT FUND (P) LTD., We are serving our customers with the lowest transaction costs. It is our mission and the reason for our success.</p>
+                    </div>
+                </div>
+
+                <div class="part5">
+                    <p class="part5p1 head slideanim">How TVL Chit Fund (P) Ltd., Works?</p><br/>
+                    <p class="part5p2 content slideanim">With its substantial experience in the field, TVL CHIT FUND (P) Ltd. has made the procedure simple and fool proof. Subscribers can choose from a wide range of chits from Rs. 1, 50,000/- to Rs. 10, 00,000/- designed to serve people of different socio-economic backgrounds. Subscribers can bid the auction even in the very first month, depending on their need. The successful bidder in the auction, after furnishing sureties can get the prize money. The formalities are simple and people friendly. You can always rely on us.</p>
+                </div>
+
+                <div class="container-fluid part6" id="regular">
+                    <div class="col-sm-6 part6left slideanim">
+                        <p class="part6p1 head">OUR REGULAR GROUPS</p>
+                        <div class="tbl table-responsive">
+                            <table border="0">
+                                <tr>
+                                    <th></th>
+                                    <th>Groups</th>
+                                    <th>Months</th>
+                                    <th>Installment</th>
+                                </tr>
+
+                                <tr>
+                                    <td>1)</td>
+                                    <td>Rs. 1, 50,000/-</td>
+                                    <td>30</td>
+                                    <td>Rs. 5,000/-.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2)</td>
+                                    <td>Rs. 3, 00,000/-</td>
+                                    <td>30</td>
+                                    <td>Rs. 10,000/-.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3)</td>
+                                    <td>Rs. 4, 50,000/-</td>
+                                    <td>30</td>
+                                    <td>Rs. 15,000/-.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4)</td>
+                                    <td>Rs. 6, 00,000/-</td>
+                                    <td>30</td>
+                                    <td>Rs. 20,000/-.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>5)</td>
+                                    <td>Rs. 10, 00,000/-</td>
+                                    <td>40</td>
+                                    <td>Rs. 25,000/-.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="part6p2 content">*** We Launch TWO NEW GROUPS every quarter. ***</p>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+
+                <div class="part7" id="about">
+                    <div class="quotation slideanim"><img id="q1" src="Images/q1.png"> To create sense of brotherhood, mutual harmony, love and affection among the member of the Society and to help in solving the internal disputes/ matters of the members of the Society <img src="Images/q2.png" id="q2"></div>
+                </div>
+
+                <div class="part8" id="contact">
+                    <div class="container whole8">
+                        <div class="col-md-4 col-sm-3 text-center left8">
+                            <p class="addp1">Mailing Address:</p>
+                            <address>
+                            TVL Chit Fund (P) Ltd.,<br>
+                            GF-3, Lakshmi towers,<br>
+                            4/7 Brodipet,<br>
+                            Guntur – 522002.
+                            </address>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-center middle8">
+                            <div style="width: 100%"><iframe width="100%" height="100%" src="https://www.maps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=Brodipet%2C%20Guntur+(TVL%20Chit%20Fund)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/fr/mesurer-distance-surface-google-maps.html">distance entre deux points carte</a></iframe></div><br /></div>
+
+                        <div class="col-md-4 col-sm-5 right8">
+                            <div class="contactus">
+                                <div class="lable">
+                                    <p class="addp1">Contact Us:</p>
+                                    <p class="addp2">Telephone:</p>
+                                    <p class="addp2">Mobile:</p>
+                                </div>
+                                <div class="value contactright">
+                                    <p class="addp1"></p>
+                                    <p class="addp2">0863-2231334</p>
+                                    <p class="addp2">+91–9440260136</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container-fluid">
+                    <div class="col-md-8 col-xs-7">
+                        <ul>
+                            <li><a href="#home">Terms and Conditions</a></li>
+                            <li><a href="#news">Privacy Policy</a></li>
+                            <li><a href="#contact">FAQ</a></li>
+                            <li><a href="#about">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-5 text-right"><a href="#about">© 2016 TVL Chit Fund (P) Ltd.</a></div>
+                </div>
+
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
